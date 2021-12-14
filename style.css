@@ -1,0 +1,142 @@
+#cards {
+  /* Display */
+  display: flex;
+  flex-wrap: wrap;
+
+  /* Box Model */
+  width: 85%;
+  margin: 0 auto;
+}
+
+.card {
+  /* Display */
+  flex: 7% 1 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  /* Box Model */
+  box-sizing: border-box;
+  height: 8vw;
+  border: 2px solid #e0e0e0;
+  margin: 2px;
+}
+
+.card img {
+  /* Display */
+  align-self: center;
+
+  /* Box Model */
+  max-width: 30%;
+}
+
+.card p {
+  /* Box Model */
+  margin: 3px;
+
+  /* Font or other */
+  font-size: 10px;
+}
+
+.card p:last-child {
+  /* Font or other */
+  transform: rotate(180deg);
+}
+
+.back {
+  /* Font or other*/
+  background: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/9222/ExportedContentImage_00.png");
+  background-size: cover;
+}
+
+.paired {
+  /* Font or other */
+  background-color: #dae0e3;
+}
+
+#header {
+  /* Display */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  /* Box Model */
+  margin: 0 auto;
+  width: 85%;
+}
+
+#header .title {
+  /* Display */
+  display: flex;
+  justify-content: flex-end;
+
+  /* Box Model */
+  width: 100%;
+}
+
+#header .title img {
+  /* Box Model */
+  max-width: 4em;
+}
+
+#header .title h2 {
+  /* Box Model */
+  padding-left: 0.5em;
+}
+
+#header .score {
+  /* Box Model */
+  margin: 0;
+
+  /* Font or other */
+  color: #6c90ac;
+}
+
+#header .tried {
+  /* Box Model */
+  margin-top: 0;
+}
+
+.wrong {
+  /* Font or other */
+  animation-name: wrongAnimation;
+  animation-duration: 0.2s;
+  animation-iteration-count: 5;
+}
+@keyframes wrongAnimation {
+  to {
+    border: 2px solid #ffd54f;
+  }
+}
+
+/** Game finished **/
+.completed {
+  /* Positioning */
+  position: absolute;
+  z-index: 999;
+  top: 33vh;
+
+  /* Box Model */
+  width: 100vw;
+  padding: 50px 0;
+
+  /* Font or other */
+  background-color: RGBA(232, 246, 254, 0.8);
+}
+
+.completed > p {
+  /* Box Model */
+  margin: 0;
+
+  /* Font or other */
+  font-size: 1.5em;
+  color: black;
+  text-align: center;
+}
+
+.completed > p:first-child {
+  /* Font or other */
+  font-size: 3em;
+  font-weight: 700;
+  color: #758d9a;
+}
