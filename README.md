@@ -4,7 +4,7 @@
 [Demo Website](https://aziz0916.github.io/memorizing-card-game/)
 
 ## 專案畫面
-![Index](https://github.com/pierceshih15/restaurantList/blob/master/public/img/homePage.png)
+![Index](https://github.com/aziz0916/memorizing-card-game/blob/main/public/img/index.png)
 ![Match](https://github.com/aziz0916/memorizing-card-game/blob/main/public/img/match.png)
 ![Unmatch](https://github.com/aziz0916/memorizing-card-game/blob/main/public/img/unmatch.png)
 ![Complete](https://github.com/aziz0916/memorizing-card-game/blob/main/public/img/complete.png)
